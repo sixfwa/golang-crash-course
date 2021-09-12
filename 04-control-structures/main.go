@@ -5,13 +5,9 @@ import "fmt"
 func main() {
 	var number int
 
-	number = 10
-
+	number = 12
 	// if statements
 	if number%2 == 0 {
-		if number == 10 {
-			fmt.Println("woah it's:", number)
-		}
 		fmt.Println(number, "is even")
 	} else if number%3 == 0 {
 		fmt.Println(number, "is a multiple of 3")
@@ -19,36 +15,42 @@ func main() {
 		fmt.Println(number, "is odd")
 	}
 
-	var myFruit string
+	var favouriteFruit string
 
-	myFruit = "chocolate"
+	favouriteFruit = "chocolate"
 
-	// switch statements
-	switch myFruit {
+	// switch
+	switch favouriteFruit {
 	case "apple":
-		fmt.Println("that's also my favourite fruit")
+		fmt.Println("yum apples are really nice")
 	case "pear":
-		fmt.Println("pears are okey in the morning")
+		fmt.Println("hmmm pears are nice too i think")
 	case "banana":
-		fmt.Println("you can slip on it")
-	case "peach":
-		fmt.Println("they are nice in the summer")
+		fmt.Println("you can slip on them, but they're nice")
 	default:
-		fmt.Println("im not sure that's a fruti")
+		fmt.Println("i don't think that is a fruit")
 	}
 
-	// for loop
+	// if favouriteFruit == "apple" {
+	// 	// do something
+	// } else if favouriteFruit == "pear" {
+	// 	// do something
+	// } else if favouriteFruit == "banana" {
+	// 	// do somethign
+	// } else {
+	// 	// do something
+	// }
+
+	// for loops
 	i := 1
 	for i <= 10 {
-		if i%2 == 0 {
-			fmt.Println("i is:", i)
-		}
+		fmt.Println(i, "doubled is:", i+i)
 		i = i + 1
 	}
 
-	for x := 1; x <= 20; x++ {
-		if x%3 == 0 {
-			fmt.Println(x, "is a number")
+	for x := 1; x <= 10; x++ {
+		if x%2 == 0 {
+			fmt.Println(x, "is even!!")
 		}
 	}
 
